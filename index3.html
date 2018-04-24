@@ -1,0 +1,438 @@
+<!-- WE REFERENCED THE DOCUMENTATION OF MDN BOOTSTRAP TO GENERATE THIS UI. WE USED THE FREE VERSION. THE LINK FOR THE DOCS PAGE IS :
+    https://mdbootstrap.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CS 411 Schedule Maker</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- main navigation-->
+
+   <header>
+
+   <!--Navbar-->
+   <nav class="navbar navbar-expand-lg navbar-dark  fixed-top scrolling-navbar top-nav-collapse"style="background: rgba(211,211,211,0.5);">
+     <div class="container">
+       <!-- Navbar brand -->
+       <a class="navbar-brand" href="#about">
+
+     <img  src="img/calender.png" height="130"  alt="graybar-logo">
+
+       </a>
+
+       <!-- Collapse button -->
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+           aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+       <!-- Collapsible content -->
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+           <!-- Links -->
+           <ul class="navbar-nav mr-auto smooth-scroll">
+
+
+               <li class="nav-item dropdown">
+             
+                 
+                  
+
+               </li>
+
+               
+                <li class="nav-item">
+                 <a class="nav-link waves-effect waves-light"href="index3.html#UserInfo"> USERINFO</a>
+              </li>
+                <li class="nav-item">
+                 <a class="nav-link waves-effect waves-light"href="index3.html#SemInfo"> SEMINFO</a>
+              </li>
+                <li class="nav-item">
+                 <a class="nav-link waves-effect waves-light"href="index3.html#CourseOpinion"> COURSE OPINION</a>
+              </li>
+                <li class="nav-item">
+                 <a class="nav-link waves-effect waves-light"href="index3.html#Analysis"> ANALYSIS</a>
+              </li>
+                <li class="nav-item">
+                 <a class="nav-link waves-effect waves-light"
+                 href="index3.html#search"> SEARCH</a>
+              </li>
+                <li class="nav-item">
+                 <a class="nav-link waves-effect waves-light"href="index3.html#MODIFY"> MODIFY</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link waves-effect waves-light"
+                 href="index3.html#DELETE"> DELETE</a>
+              </li>
+
+
+           </ul>
+           <!-- Links -->
+
+
+       </div>
+       <!-- Collapsible content -->
+
+    </div>
+   </nav>
+   <!--/.Navbar-->
+   <div id="intro" class="view hm-stylish-light">
+
+       <div class="container-fluid  full-bg-img d-flex align-items-center justify-content-center">
+
+           <div class="row d-flex justify-content-center">
+
+               <div class="col-md-12 text-center">
+
+                   <!-- Heading -->
+                   <h2 class="display-3 font-bold white-text"> SCHEDULE MAKER</h2>
+
+                   <!-- Divider -->
+                   <hr class="hr-light">
+
+                   <!-- Description -->
+                   <h4 class="white-text my-4">PRODUCED BY FOOBAR (Rohan Khanna, Grace Wehner, Lavisha Aggarwal)</h4> 
+                   <div class="bounce">
+          <!--  <a href="index.html#about">  <img class="arrow" style="width:100%; height:75%"src="./img/arrow.png" /> </a> -->
+                   </div>
+
+               </div>
+
+           </div>
+
+       </div>
+
+   </div>
+
+
+  </header>
+ <!-- main navigation -->
+
+
+ <!-- main layout -->
+  <main>
+    <!--Main container-->
+    <section>
+   <div class="container-fluid">
+   <div class="row " id="UserInfo">
+
+    <div class="col-lg-12 mb-5 full-bg-img align-items-center text-center" id="bkg" >
+
+      <div class="card" style="background: rgba(255,255,255,0.9);" >
+
+   
+         
+    <h3 class="card-title   pt-2 " style="color:#3399CC"  ><strong>ADD USER INFO<br>(You can either enter cumulative information here or add your individual semester information below)</strong> </h3>
+                
+    <form action="add.php" method="get" target="_blank">
+      <input type = "email" name = "email" value = "" style="width: 248px" > Email (illinois) <br/>
+     <input type="number" name="Credits" value="" style="width: 143px"/> Credits you have taken so far 
+     <br/>
+       <select name="currentsem" style ="text-align:justify">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+     </select>Current Semester (Select a semester from 1 to 8)<br/>
+ <br>
+     <select name="FOS" style ="text-align:justify">
+        <option value="Algorithms">Algorithms</option>
+        <option value="Software">Software</option>
+        <option value="Systems">Systems</option>
+        <option value="Data">Data (AI, Information systems)</option>
+     </select>Field of Study interested in<br/>
+    <br>
+     <select name="Priority" style ="text-align:justify">
+        <option value="L">To take courses that will help me learn more in my FOS</option>
+        <option value="G">To Graduate on time or early</option>
+        <option value="GPA">To score a high GPA</option>
+     </select>Priority<br/>
+     <br/>
+     
+     <input type="number" name="genedhours" value="" style="width: 143px"/> Gened Credits you have taken so far  <br/>
+     <br/>
+   
+     <input type="number" name="electivehours" value="" style="width: 143px"/> Science Elective Credits you have taken so far  <br/>
+     <br/>
+    
+       <input class='btn btn-blue' type="submit" value="Add">
+     </form>
+
+        </div>
+       </div>
+        <!-- Content -->
+
+     </div>
+        <!-- Card -->
+
+  </div>
+ </section>
+
+<section>
+
+  <div class="row" id="SemInfo" >
+    <div class="col-lg-12 mb-5" id="bkg2">
+      <div class="card" style="background: rgba(255,255,255,0.9);">
+        <div class="text-black text-center d-flex align-items-center py-5 px-4">
+        <div class="align-items-center">
+          <h3 class="card-title pt-2" style="color:#3399CC"> <strong>ADD SEMESTER  INFORMATION</strong> </h3>
+           
+      <form action = "add_schedule.php" method="get" target="_blank">
+         <br><br>Add a semester information along with the courses you took in that semester <br><br>
+         <input type = "email" name = "email" value = "" > Email <br/>
+         <input type = "number" name = "add_semester" value = "" > Semester 
+         <br/>
+          <input type = "number" name = "add_credit" value = "" > Credit Hours <br/>
+          <input type="number" name="numberofcourses" value="" > Please enter the number of CS  courses you took in this semester
+     <br/>
+         <input type = "" name = "add_courses" value = "" > Courses Taken (Please seperate them with a space Eg. "173 225" without the quotes)<br/>
+         <input type = "number" step="0.01" name = "add_GPA" value = "" > GPA <br/>
+         <input type="number" name="genedhours" value="" style="width: 143px"/> Gened Credits you have taken so far  <br/>
+     <br/>
+     <br/>
+     <input type="number" name="electivehours" value="" style="width: 143px"/> Science Elective Credits you have taken so far  <br/>
+     <br/>
+     <br/>
+         <input type = "submit" value = "add">
+     </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+  <!-- Grid row -->
+<section>
+
+  <div class="row" id="CourseOpinion" >
+    <div class="col-lg-12 mb-5" id="bkg">
+      <div class="card" style="background: rgba(255,255,255,0.9);">
+        <div class="text-black text-center d-flex align-items-center py-5 px-4">
+        <div class="align-items-center">
+          <h3 class="card-title pt-2" style="color:#3399CC"> <strong>ADD COURSE OPINION</strong> </h3>
+           
+     <form action = "course_info.php" method = "get" target = "_blank" >
+        
+         <input type = "number" name = "course_name" value = ""> Course Number <br/>
+         <input type = "number" name = "course_usefulness" value = "" > Course Usefulness: 1 means not useful at all, 5 means very useful <br/>
+         <input type = "number" name = "course_difficulty" value = "" > Course Difficulty: 1 means not difficult at all, 5 means very difficult <br/>
+         <input type = "number" name = "course_workload" value = "" > Course Workload: 1 means not much work at all, 5 means a lot of work <br/>
+         <input class= 'btn btn-blue' type = "submit" value = "Add">
+     </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+
+  <div class="row" id="Analysis" >
+    <div class="col-lg-12 mb-5" id="bkg2">
+      <div class="card" style="background: rgba(255,255,255,0.9);">
+     
+          <h3 class="card-title pt-2" style="color:#3399CC"> <strong>PERFORM ANALYSIS</strong> </h3>
+           
+    <form action="advanced.php" method="get" target="_blank">
+       <br>
+         <input type = "email" name = "Email" value = "" > Email <br/>
+         <select name="Priority" style ="text-align:justify">
+        <option value="Learning">Learning</option>
+        <option value="HighGpa">Getting a high GPA</option>
+     </select>Priority<br/>
+     <select name="credithours" style ="text-align:justify">
+        <option value=12>Around 12</option>
+        <option value=15>Around 15</option>
+        <option value=18>Around 18</option>
+     </select>Credit Hours for the semester<br/>
+         <br>
+         <input class ="btn btn-blue" type="submit" value="Analyze">
+     </form>
+    
+    <h3 class="card-title pt-2" style="color:#3399CC"> <strong>Get information about a specific course</strong> </h3>
+    
+    <form action = "advanced2.php" method = "get" traget = "_blank"> <br>
+        <input type = "number" name = "Course" value = ""> Course Code <br/>
+        <input class ="btn btn-blue" type="submit" value="Get Information">
+    </form>
+        </div>
+      </div>
+    </div>
+ 
+</section>
+
+<section>
+
+  <div class="row" id="search" >
+    <div class="col-lg-12 mb-5" id="bkg2">
+      <div class="card" style="background: rgba(255,255,255,0.9);">
+     
+          <h3 class="card-title pt-2" style="color:#3399CC"> <strong>SEARCH SOME DATA :D </strong> </h3>
+     <form action ="search.php" method="get" target="_blank">
+         Search for students who are in the same field to get valuable inputs from them. <br><br>
+          <select name="FOS" style ="width: 150px">
+        <option value="Algorithms">Algorithms</option>
+        <option value="Software">Software</option>
+        <option value="Systems">Systems</option>
+        <option value="Data">Data</option>
+     </select> <br><br>
+         <input class='btn btn-blue'type="submit" value="Search">
+     </form>
+     
+     <form action ="search_schedule.php" method="get" target="_blank">
+         Search for schedules in the same specified semester. <br><br>
+        <input type="" name = "search_semester" value = ""/> Semester <br><br>
+        <input class='btn btn-blue' type="submit" value="Search">
+     </form>
+     
+     <form action ="search_db.php" method="get" target="_blank">
+         Search the database <br><br>
+        <input type="" name = "search_word" value = ""/>  <br><br>
+        <input class='btn btn-blue' type="submit" value="Search">
+     </form>
+     
+      Get the schedules that people with my set of courses had
+     
+     <form action = "get_existing_schedules.php" method = "get" target = "_blank">
+         <input class='btn btn-blue' type = "submit" value = "get">
+     </form>
+        </div>
+      </div>
+    </div>
+ 
+</section>
+
+<section>
+
+  <div class="row" id="MODIFY" >
+    <div class="col-lg-12 mb-5" id="bkg2">
+      <div class="card" style="background: rgba(255,255,255,0.9);">
+     
+          <h3 class="card-title pt-2" style="color:#3399CC"> <strong>MODIFY YOUR INFORMATION </strong> </h3>
+     <form action = "modify.php" method="get" target="_blank">
+         Modify the user information <br><br>
+         <input type="email" name="modify_email" value=""/> Email address for which you want to modify the information<br/>
+         <select name="modify_priority" style="width: 150px">
+            <option value="L">Learning</option>
+            <option value="G">Graduation</option>
+            <option value="GPA">GPA</option>
+         </select>Priority<br/>
+         <select name="modify_sem" style ="width: 150px">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+     </select>Current Semester (Select a semester from 1 to 8)<br/>
+     <select name="modify_FOS" style ="width: 150px">
+        <option value="Algorithms">Algorithms</option>
+        <option value="Software">Software</option>
+        <option value="Systems">Systems</option>
+        <option value="Data">Data</option>
+     </select>Field of Study<br/>
+         <input type="number" name="modify_credits" value="" style="width: 143px"/> Credits  <br/>
+         <input class='btn btn-blue' type="submit" value="Modify">
+     </form>
+        </div>
+      </div>
+    </div>
+ 
+</section>
+
+
+
+
+<section>
+
+  <div class="row" id="DELETE" >
+    <div class="col-lg-12 mb-5" id="bkg2">
+      <div class="card" style="background: rgba(255,255,255,0.9);">
+     
+          <h3 class="card-title pt-2" style="color:#3399CC"> <strong>DELETE MY DATA </strong> </h3>
+     <form action="delete.php" method="get" target="_blank">
+           <input type = "email" name = "delete_email" value = "" > Email (illinois) <br/>
+       <input class='btn btn-blue' type="submit" value="Delete">
+     </form>
+     
+        </div>
+      </div>
+    </div>
+ 
+</section>
+
+
+
+
+
+
+</div>
+
+
+
+  </div>
+
+  </main>
+<!-- main layout -->
+
+
+
+    <!--Footer-->
+         <footer >
+
+
+
+             <!--Copyright-->
+             <div class="footer-copyright  grey py-3 text-center">
+                 <div class="container-fluid">
+                     © 2018 Copyright: Foobar </a>
+                     Css -> MDN BOOTSTRAP
+                     
+
+                 </div>
+             </div>
+             <!--/.Copyright-->
+
+         </footer>
+         <!--/.Footer-->
+
+
+
+
+
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+
+</html>
